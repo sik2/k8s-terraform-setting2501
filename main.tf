@@ -140,7 +140,7 @@ resource "aws_route53_zone" "vpc_1_zone" {
   vpc {
     vpc_id = aws_vpc.vpc_1.id
   }
-  name = "vpc-1.com"
+  name = "${var.prefix}-vpc-1.com"
 }
 # ROUTE 53 설정 끝
 
